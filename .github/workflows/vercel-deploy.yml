@@ -4,18 +4,20 @@ on:
   push:
     branches: [main]
 
+env:
+  VERCEL_ORG_ID: team_BmM07g8YY0iso8vRNtBE1V6O
+  VERCEL_PROJECT_ID: prj_VuZLaz74XHNtC93Nx4ABHb9XCA0A
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
+      - name: Install Vercel CLI
+        run: npm install -g vercel
+
       - name: Deploy to Vercel
-        run: |
-          npm install -g vercel
-          vercel deploy --prod --token=${{ secrets.VERCEL_TOKEN }} \
-            --scope=team_BmM07g8YY0iso8vRNtBE1V6O \
-            --yes
+        run: vercel deploy --prod --yes --token "$VERCEL_TOKEN" --scope "$VERCEL_ORG_ID"
         env:
-          VERCEL_ORG_ID: team_BmM07g8YY0iso8vRNtBE1V6O
-          VERCEL_PROJECT_ID: prj_VuZLaz74XHNtC93Nx4ABHb9XCA0A
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
