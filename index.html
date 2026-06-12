@@ -3,8 +3,24 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="X BEEF Ayutthaya - dry-aged beef, world steaks, Western comfort food, Thai-Western fusion, family dining, outdoor garden atmosphere, and warm service." />
-  <title>X BEEF Ayutthaya | Steak & Comfort Dining</title>
+  <title>X BEEF Ayutthaya | Steakhouse & Comfort Dining — ร้านสเต็ก อยุธยา</title>
+  <meta name="description" content="X BEEF Ayutthaya — dry-aged beef, world steaks, burgers, BBQ pork ribs, Thai-Western comfort food, garden seating, and warm family dining. ร้านสเต็กและเนื้อดรายเอจ อยุธยา เปิดทุกวัน 11:00–22:00" />
+  <link rel="canonical" href="https://xbeefth.com/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='32'%20fill='%2315120f'/%3E%3Ctext%20x='32'%20y='44'%20font-family='Georgia,serif'%20font-size='36'%20fill='%23c8a46e'%20text-anchor='middle'%3EX%3C/text%3E%3C/svg%3E" />
+
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:site_name" content="X BEEF" />
+  <meta property="og:title" content="X BEEF Ayutthaya | Steakhouse & Comfort Dining" />
+  <meta property="og:description" content="Dry-aged beef, world steaks, burgers, BBQ pork ribs, Thai-Western comfort food, garden seating, and warm family dining in Ayutthaya. Open daily 11:00–22:00." />
+  <meta property="og:url" content="https://xbeefth.com/" />
+  <meta property="og:image" content="https://xbeefth.com/wp-content/uploads/elementor/thumbs/X11-e1722393262635-r9k4gzl1r7buju2m4r7fz9wevh74fpajcmrq318xec.jpg" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="th_TH" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="X BEEF Ayutthaya | Steakhouse & Comfort Dining" />
+  <meta name="twitter:description" content="Dry-aged beef, world steaks, and Thai-Western comfort food in Ayutthaya. Open daily 11:00–22:00." />
+  <meta name="twitter:image" content="https://xbeefth.com/wp-content/uploads/elementor/thumbs/X11-e1722393262635-r9k4gzl1r7buju2m4r7fz9wevh74fpajcmrq318xec.jpg" />
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -12,7 +28,8 @@
     "name": "X BEEF",
     "url": "https://xbeefth.com/",
     "telephone": "+66811541145",
-    "priceRange": "THB THB",
+    "priceRange": "฿฿-฿฿฿",
+    "acceptsReservations": "True",
     "servesCuisine": ["Steakhouse", "Western", "Thai-Western Fusion", "Cafe", "Comfort Food"],
     "image": [
       "https://xbeefth.com/wp-content/uploads/elementor/thumbs/X11-e1722393262635-r9k4gzl1r7buju2m4r7fz9wevh74fpajcmrq318xec.jpg",
@@ -32,562 +49,31 @@
       "opens": "11:00",
       "closes": "22:00"
     }],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "bestRating": "5",
-      "ratingCount": "200"
-    },
+    "hasMenu": "https://heyzine.com/flip-book/7badf703f1.html",
     "sameAs": [
       "https://www.facebook.com/xbeefth",
       "https://www.instagram.com/xbeefth/"
     ]
   }
   </script>
-  <style>
-    :root {
-      color-scheme: light;
-      --page: #f7efe4;
-      --text: #15120f;
-      --deep: #15120f;
-      --deep-text: #f7efe4;
-      --sand: #e8ddcf;
-      --card: rgba(255,255,255,0.54);
-      --warm: #8b6a46;
-      --gold: #c8a46e;
-      --line: rgba(21,18,15,0.16);
-      --muted: rgba(21,18,15,0.74);
-      --soft: rgba(21,18,15,0.72);
-      --header-text: rgba(255,255,255,0.76);
-      --white: #ffffff;
-      --shadow: 0 24px 80px rgba(42,32,22,0.12);
-      --radius-lg: 32px;
+
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("xbeef-theme");
+        if (theme === "dark" || theme === "light") document.documentElement.setAttribute("data-theme", theme);
+        var lang = localStorage.getItem("xbeef-lang") || ((navigator.language || "").toLowerCase().indexOf("th") === 0 ? "th" : "en");
+        document.documentElement.lang = lang;
+      } catch (e) {}
+    })();
+    function handleImageError(image) {
+      var card = image.closest(".photo-card");
+      if (card) card.classList.add("image-failed");
+      image.remove();
     }
+  </script>
 
-    html[data-theme="dark"] {
-      color-scheme: dark;
-      --page: #15120f;
-      --text: #f7efe4;
-      --deep: #0f0c0a;
-      --deep-text: #f7efe4;
-      --sand: #231e18;
-      --card: rgba(255,255,255,0.06);
-      --warm: #c6a071;
-      --gold: #d6b178;
-      --line: rgba(247,239,228,0.18);
-      --muted: rgba(247,239,228,0.78);
-      --soft: rgba(247,239,228,0.74);
-      --header-text: rgba(255,255,255,0.78);
-      --shadow: 0 24px 80px rgba(0,0,0,0.34);
-    }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      background: var(--page);
-      color: var(--text);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
-      transition: background 200ms ease, color 200ms ease;
-    }
-
-    a { color: inherit; text-decoration: none; }
-    button { font: inherit; }
-    img { display: block; max-width: 100%; }
-    .container { width: min(100% - 40px, 1280px); margin-inline: auto; }
-
-    .site-header {
-      position: fixed;
-      inset: 0 0 auto 0;
-      z-index: 50;
-      border-bottom: 1px solid rgba(255,255,255,0.14);
-      background: rgba(21,18,15,0.88);
-      backdrop-filter: blur(18px);
-    }
-
-    .nav-wrap {
-      height: 76px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 22px;
-    }
-
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      color: var(--white);
-      min-width: 220px;
-    }
-
-    .xmark {
-      width: 44px;
-      height: 44px;
-      border: 1px solid rgba(255,255,255,0.36);
-      border-radius: 999px;
-      display: grid;
-      place-items: center;
-      font-weight: 650;
-      letter-spacing: -0.03em;
-      flex: 0 0 auto;
-    }
-
-    .xmark.dark { border-color: var(--line); color: var(--text); }
-    .brand-title {
-      display: block;
-      font-size: 14px;
-      line-height: 1;
-      font-weight: 750;
-      letter-spacing: 0.34em;
-      text-transform: uppercase;
-    }
-
-    .brand-subtitle {
-      display: block;
-      margin-top: 7px;
-      font-size: 10px;
-      line-height: 1.35;
-      text-transform: uppercase;
-      letter-spacing: 0.26em;
-      color: var(--header-text);
-    }
-
-    .desktop-nav {
-      display: flex;
-      align-items: center;
-      gap: 30px;
-      color: var(--header-text);
-      font-size: 12px;
-      font-weight: 750;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-    }
-
-    .desktop-nav a { transition: color 180ms ease; }
-    .desktop-nav a:hover { color: var(--white); }
-    .header-actions { display: flex; align-items: center; justify-content: flex-end; gap: 10px; min-width: 260px; }
-
-    .theme-icon-toggle,
-    .menu-toggle,
-    .close-btn {
-      width: 42px;
-      height: 42px;
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,0.34);
-      background: transparent;
-      color: var(--white);
-      cursor: pointer;
-      font-size: 20px;
-    }
-
-    .theme-icon-toggle {
-      width: 40px;
-      height: 40px;
-      background: rgba(255,255,255,0.07);
-      display: grid;
-      place-items: center;
-      font-size: 18px;
-      transition: background 180ms ease, transform 180ms ease, border-color 180ms ease;
-    }
-
-    .theme-icon-toggle:hover {
-      background: rgba(255,255,255,0.14);
-      border-color: rgba(255,255,255,0.52);
-      transform: translateY(-1px);
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 46px;
-      border-radius: 999px;
-      padding: 0 24px;
-      border: 0;
-      cursor: pointer;
-      font-size: 12px;
-      line-height: 1;
-      font-weight: 750;
-      text-transform: uppercase;
-      letter-spacing: 0.18em;
-      transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
-    }
-
-    .btn:hover { transform: translateY(-1px); }
-    .btn.dark { background: var(--text); color: var(--page); }
-    .btn.light { background: var(--page); color: var(--text); }
-    .btn.line { background: transparent; border: 1px solid var(--line); color: var(--text); }
-    .btn.line:hover { border-color: var(--text); }
-    .btn.line-light { background: transparent; border: 1px solid rgba(255,255,255,0.38); color: #fff; }
-    .btn.line-light:hover { background: rgba(255,255,255,0.12); }
-    .menu-toggle { display: none; }
-
-    .mobile-panel {
-      position: fixed;
-      inset: 0;
-      z-index: 80;
-      display: none;
-      padding: 24px;
-      background: var(--deep);
-      color: var(--deep-text);
-    }
-
-    .mobile-panel.is-open { display: block; }
-    .mobile-panel-head { display: flex; align-items: center; justify-content: space-between; }
-    .mobile-panel nav {
-      display: grid;
-      gap: 26px;
-      margin-top: 72px;
-      font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
-      font-size: clamp(42px, 13vw, 72px);
-      line-height: 0.92;
-      letter-spacing: -0.07em;
-      font-weight: 300;
-    }
-
-    .close-btn { color: var(--deep-text); font-size: 24px; }
-    .hero {
-      position: relative;
-      min-height: 100vh;
-      overflow: hidden;
-      background: var(--deep);
-      color: var(--deep-text);
-      padding-top: 76px;
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      opacity: 0.70;
-      background:
-        radial-gradient(circle at 74% 18%, rgba(198,132,73,.24), transparent 30%),
-        radial-gradient(circle at 12% 82%, rgba(108,40,28,.22), transparent 36%);
-    }
-
-    .hero-grid {
-      position: relative;
-      min-height: calc(100vh - 76px);
-      display: grid;
-      grid-template-columns: 1.04fr 0.96fr;
-      align-items: center;
-      gap: 56px;
-      padding: 56px 0 72px;
-    }
-
-    .eyebrow {
-      margin: 0;
-      color: var(--warm);
-      font-size: 12px;
-      font-weight: 750;
-      letter-spacing: 0.34em;
-      text-transform: uppercase;
-    }
-
-    .eyebrow.light { color: var(--gold); }
-    .hero-title,
-    .section-title {
-      margin: 0;
-      font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
-      font-weight: 300;
-      letter-spacing: -0.075em;
-    }
-
-    .hero-title {
-      margin-top: 28px;
-      max-width: 900px;
-      font-size: clamp(68px, 10.4vw, 128px);
-      line-height: 0.86;
-    }
-
-    .hero-copy {
-      margin: 32px 0 0;
-      max-width: 640px;
-      color: rgba(255,255,255,0.78);
-      font-size: 18px;
-      line-height: 1.85;
-    }
-
-    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 40px; }
-    .hero-pills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; max-width: 700px; margin-top: 40px; }
-    .info-pill {
-      border: 1px solid rgba(255,255,255,0.16);
-      border-radius: 18px;
-      background: rgba(255,255,255,0.075);
-      padding: 16px;
-      backdrop-filter: blur(12px);
-    }
-
-    .info-pill small,
-    .photo-caption small,
-    .rating-label {
-      color: var(--gold);
-      font-size: 10px;
-      font-weight: 750;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-    }
-
-    .info-pill p { margin: 8px 0 0; color: rgba(255,255,255,0.82); font-size: 14px; line-height: 1.65; }
-    .photo-card {
-      --placeholder-bg:
-        radial-gradient(circle at 30% 24%, rgba(200,164,110,.32), transparent 28%),
-        radial-gradient(circle at 78% 78%, rgba(139,106,70,.26), transparent 34%),
-        linear-gradient(145deg, #18120e, #2b1c13 58%, #17110d);
-      position: relative;
-      min-height: 520px;
-      overflow: hidden;
-      border-radius: var(--radius-lg);
-      background: #17120e;
-      margin: 0;
-      isolation: isolate;
-    }
-
-    .photo-card.light {
-      --placeholder-bg:
-        radial-gradient(circle at 70% 24%, rgba(255,255,255,.62), transparent 30%),
-        radial-gradient(circle at 18% 78%, rgba(139,106,70,.20), transparent 34%),
-        linear-gradient(145deg,#dfd4c4,#b89f82);
-      background: #d8cab8;
-    }
-
-    .photo-card.hero-photo { min-height: 610px; }
-    .photo-card img { position: absolute; inset: 0; z-index: 0; width: 100%; height: 100%; object-fit: cover; }
-    .photo-card::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      z-index: 0;
-      opacity: 0;
-      background: var(--placeholder-bg);
-      transition: opacity 160ms ease;
-    }
-
-    .photo-card.image-failed::before { opacity: 1; }
-    .photo-card::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      z-index: 1;
-      opacity: 0.10;
-      background-image: linear-gradient(90deg,currentColor 1px,transparent 1px),linear-gradient(currentColor 1px,transparent 1px);
-      background-size: 42px 42px;
-      color: #fff;
-      pointer-events: none;
-    }
-
-    .photo-card.light::after { color: #15120f; }
-    .photo-card.image-failed::after { opacity: 0.22; }
-    .fallback-mark {
-      position: absolute;
-      inset: 0;
-      z-index: 1;
-      display: grid;
-      place-items: center;
-      color: rgba(255,255,255,0.16);
-      font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
-      font-size: clamp(110px, 16vw, 220px);
-      line-height: 1;
-      letter-spacing: -0.10em;
-      opacity: 0;
-      transition: opacity 160ms ease;
-    }
-
-    .photo-card.light .fallback-mark { color: rgba(21,18,15,0.18); }
-    .photo-card.image-failed .fallback-mark { opacity: 1; }
-    .photo-shade {
-      position: absolute;
-      inset: 0;
-      z-index: 2;
-      background: linear-gradient(to top, rgba(21,18,15,0.98), rgba(21,18,15,0.28), transparent);
-    }
-
-    .photo-card.light .photo-shade { background: linear-gradient(to top, rgba(216,202,184,.94), rgba(216,202,184,.20), transparent); }
-    .photo-caption {
-      position: absolute;
-      inset: auto 28px 28px 28px;
-      z-index: 3;
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      gap: 24px;
-    }
-
-    .photo-caption small { display: block; font-size: 12px; letter-spacing: 0.30em; }
-    .photo-caption strong {
-      display: block;
-      max-width: 390px;
-      margin-top: 8px;
-      color: #f7efe4;
-      font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
-      font-size: 32px;
-      line-height: 0.98;
-      letter-spacing: -0.055em;
-      font-weight: 500;
-    }
-
-    .photo-caption p { margin: 12px 0 0; max-width: 340px; color: rgba(255,255,255,0.74); font-size: 14px; line-height: 1.7; }
-    .photo-card.light .photo-caption small { color: #5f4326; }
-    .photo-card.light .photo-caption strong { color: #15120f; }
-    .photo-card.light .photo-caption p { color: rgba(21,18,15,0.74); }
-    .rating-card {
-      position: absolute;
-      inset: auto 28px 0 28px;
-      z-index: 4;
-      border: 1px solid rgba(255,255,255,0.16);
-      border-radius: 24px;
-      background: rgba(21,18,15,0.86);
-      backdrop-filter: blur(18px);
-      padding: 24px;
-      transform: translateY(50%);
-    }
-
-    .rating-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-    .rating-label { font-size: 12px; letter-spacing: 0.28em; }
-    .rating-number {
-      margin-top: 4px;
-      font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
-      font-size: 50px;
-      line-height: 1;
-      letter-spacing: -0.06em;
-      font-weight: 300;
-    }
-
-    .rating-card p:last-child { margin: 0; max-width: 390px; color: rgba(255,255,255,0.76); font-size: 14px; line-height: 1.7; text-align: right; }
-    .section { padding: 112px 0; }
-    .story-grid { display: grid; grid-template-columns: 0.92fr 1.08fr; gap: 64px; align-items: center; }
-    .image-stack { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-    .image-stack .photo-card:first-child { margin-top: 64px; }
-    .section-title { margin-top: 24px; max-width: 820px; font-size: clamp(52px, 6.8vw, 92px); line-height: 0.96; }
-    .section-copy { margin: 32px 0 0; max-width: 720px; color: var(--muted); font-size: 18px; line-height: 1.85; }
-    .value-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 44px; }
-    .value-card { border-top: 1px solid var(--line); padding-top: 22px; }
-    .value-card h3 { margin: 0; font-size: 18px; letter-spacing: -0.03em; }
-    .value-card p { margin: 12px 0 0; color: var(--soft); font-size: 14px; line-height: 1.75; }
-    .menu-section { background: var(--sand); }
-    .section-head { display: grid; grid-template-columns: 0.86fr 1.14fr; align-items: end; gap: 44px; }
-    .menu-layout { display: grid; grid-template-columns: 0.72fr 1.28fr; gap: 32px; margin-top: 54px; }
-    .menu-tabs { display: flex; flex-direction: column; gap: 12px; }
-    .menu-tab {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: transparent;
-      color: var(--muted);
-      padding: 17px 22px;
-      cursor: pointer;
-      text-align: left;
-      font-size: 13px;
-      font-weight: 750;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      transition: border-color 180ms ease, color 180ms ease, background 180ms ease;
-    }
-
-    .menu-tab:hover { border-color: var(--text); }
-    .menu-tab.is-active { border-color: var(--text); background: var(--text); color: var(--page); }
-    .menu-tab span { transition: transform 180ms ease; }
-    .menu-tab:hover span { transform: translateX(4px); }
-    .menu-card,
-    .info-card { border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--card); backdrop-filter: blur(10px); box-shadow: var(--shadow); }
-    .menu-card { padding: 42px; }
-    .menu-card h3 {
-      margin: 16px 0 0;
-      max-width: 720px;
-      font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
-      font-size: clamp(38px, 4vw, 56px);
-      line-height: 1.02;
-      letter-spacing: -0.055em;
-      font-weight: 300;
-    }
-
-    .menu-list { margin-top: 40px; border-top: 1px solid var(--line); }
-    .menu-item {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
-      padding: 20px 0;
-      border-bottom: 1px solid var(--line);
-      font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
-      font-size: 24px;
-      line-height: 1.25;
-      letter-spacing: -0.03em;
-    }
-
-    .menu-item span:last-child { color: var(--warm); font-family: inherit; font-size: 18px; }
-    .menu-note { margin-top: 36px; border: 1px solid var(--line); border-radius: 20px; padding: 18px; color: var(--soft); font-size: 14px; line-height: 1.75; }
-    .experience { background: var(--deep); color: var(--deep-text); }
-    .experience-grid { display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 56px; align-items: start; }
-    .experience-list { display: grid; gap: 16px; }
-    .experience-item { display: grid; grid-template-columns: 80px 1fr; gap: 20px; border: 1px solid rgba(255,255,255,0.16); border-radius: 28px; padding: 28px; }
-    .experience-number { color: var(--gold); font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif; font-size: 42px; line-height: 1; letter-spacing: -0.06em; font-weight: 300; }
-    .experience-item h3 { margin: 0; font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif; font-size: 30px; line-height: 1.05; letter-spacing: -0.04em; font-weight: 300; }
-    .experience-item p { margin: 12px 0 0; color: rgba(255,255,255,0.74); line-height: 1.75; }
-    .testimonial-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 64px; }
-    .testimonial-card { border-radius: 28px; background: rgba(255,255,255,0.075); padding: 30px; }
-    .stars { color: var(--gold); letter-spacing: 0.08em; }
-    .testimonial-card blockquote { margin: 24px 0 0; font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif; font-size: 23px; line-height: 1.48; letter-spacing: -0.035em; }
-    .testimonial-card cite { display: block; margin-top: 30px; color: rgba(255,255,255,0.74); font-size: 12px; font-style: normal; font-weight: 750; letter-spacing: 0.22em; text-transform: uppercase; }
-    .visit-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: start; }
-    .info-card { padding: 42px; }
-    .rating-row { display: flex; align-items: center; justify-content: space-between; gap: 24px; border-bottom: 1px solid var(--line); padding-bottom: 28px; margin-bottom: 8px; }
-    .rating-row .rating-number { color: var(--text); font-size: 66px; }
-    .info-list { margin: 0; padding: 0; list-style: none; }
-    .info-list li { display: grid; grid-template-columns: 130px 1fr; gap: 16px; padding: 20px 0; border-bottom: 1px solid var(--line); }
-    .info-list li:last-child { border-bottom: 0; }
-    .info-list strong { color: var(--warm); font-size: 12px; font-weight: 750; letter-spacing: 0.22em; text-transform: uppercase; }
-    .info-list span { color: var(--soft); line-height: 1.7; }
-    .footer { border-top: 1px solid var(--line); padding: 32px 0; }
-    .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; color: var(--soft); font-size: 14px; }
-    .footer-brand { display: flex; align-items: center; gap: 12px; }
-    .footer-links { display: flex; flex-wrap: wrap; gap: 22px; }
-
-    @media (max-width: 1080px) {
-      .desktop-nav { gap: 18px; }
-      .header-actions { min-width: auto; }
-    }
-
-    @media (max-width: 980px) {
-      .desktop-nav, .site-header .btn { display: none; }
-      .header-actions { gap: 8px; }
-      .header-actions .theme-icon-toggle { width: 36px; height: 36px; font-size: 16px; }
-      .menu-toggle { display: grid; place-items: center; }
-      .hero-grid, .story-grid, .section-head, .menu-layout, .experience-grid, .visit-grid { grid-template-columns: 1fr; }
-      .hero-grid { padding-top: 36px; }
-      .photo-card.hero-photo { min-height: 560px; }
-      .image-stack .photo-card:first-child { margin-top: 0; }
-      .value-grid, .testimonial-grid { grid-template-columns: 1fr; }
-      .section { padding: 86px 0; }
-    }
-
-    @media (max-width: 640px) {
-      .container { width: min(100% - 28px, 1280px); }
-      .brand-subtitle { display: none; }
-      .brand { min-width: auto; }
-      .hero-title { font-size: clamp(56px, 17vw, 80px); }
-      .section-title { font-size: clamp(44px, 14vw, 64px); }
-      .hero-pills { grid-template-columns: 1fr; }
-      .photo-card.hero-photo, .photo-card { min-height: 430px; }
-      .image-stack { grid-template-columns: 1fr; }
-      .rating-card { position: relative; inset: auto; transform: none; margin-top: 18px; }
-      .rating-inner { align-items: flex-start; flex-direction: column; }
-      .rating-card p:last-child { text-align: left; }
-      .menu-card, .info-card { padding: 26px; }
-      .menu-item { font-size: 21px; }
-      .experience-item { grid-template-columns: 1fr; }
-      .info-list li { grid-template-columns: 1fr; gap: 6px; }
-      .footer-inner { align-items: flex-start; flex-direction: column; padding-bottom: 70px; }
-      .photo-caption { inset: auto 22px 22px 22px; }
-      .photo-caption strong { font-size: 28px; }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
@@ -596,7 +82,7 @@
         <span class="xmark">X</span>
         <span>
           <span class="brand-title">X BEEF</span>
-          <span class="brand-subtitle" data-i18n="brandSubtitle">Steak - Thai-Western comfort - Ayutthaya</span>
+          <span class="brand-subtitle" data-i18n="brandSubtitle">Steak · Thai-Western comfort · Ayutthaya</span>
         </span>
       </a>
       <nav class="desktop-nav" aria-label="Main navigation">
@@ -606,9 +92,15 @@
         <a href="#visit" data-i18n="navVisit">Visit</a>
       </nav>
       <div class="header-actions">
-        <button class="theme-icon-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode" title="Toggle dark mode"><span data-theme-icon>moon</span></button>
+        <button class="icon-btn lang-toggle" type="button" data-lang-toggle aria-label="Switch language">ไทย</button>
+        <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
         <a class="btn line-light" href="#visit" data-i18n="reserve">Reserve</a>
-        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="mobilePanel">=</button>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="mobilePanel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
       </div>
     </div>
   </header>
@@ -616,7 +108,9 @@
   <div class="mobile-panel" id="mobilePanel" aria-hidden="true">
     <div class="mobile-panel-head">
       <span class="brand-title">X BEEF</span>
-      <button class="close-btn" type="button" aria-label="Close navigation">x</button>
+      <button class="close-btn" type="button" aria-label="Close navigation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
     </div>
     <nav aria-label="Mobile navigation">
       <a href="#story" data-i18n="navStory">Story</a>
@@ -626,7 +120,7 @@
     </nav>
     <div class="actions">
       <a class="btn light" href="tel:+66811541145" data-i18n="callNow">Call now</a>
-      <a class="btn line-light" href="#visit" data-i18n="visitInfo">Visit info</a>
+      <a class="btn line-light" href="https://line.me/R/ti/p/@xbeefth" target="_blank" rel="noreferrer" data-i18n="lineChat">Chat on LINE</a>
     </div>
   </div>
 
@@ -634,22 +128,22 @@
     <section class="hero" id="top">
       <div class="container hero-grid">
         <div>
-          <p class="eyebrow light" data-i18n="heroEyebrow">Dry-aged beef - Thai-Western comfort - family dining</p>
+          <p class="eyebrow light" data-i18n="heroEyebrow">Dry-aged beef · Thai-Western comfort · family dining</p>
           <h1 class="hero-title" data-i18n="heroTitle">A warm table in Ayutthaya.</h1>
           <p class="hero-copy" data-i18n="heroCopy">X BEEF is a relaxed comfort-dining restaurant for families, couples, friends, and travellers. Come for generous comfort food, dry-aged beef, steaks from around the world, Western favourites like burgers, pasta, BBQ pork ribs and lamb chop, Thai-Western flavours, coffee, dessert, and an easy atmosphere that feels good at any time of day.</p>
           <div class="actions">
             <a class="btn light" href="#visit" data-i18n="reserveTable">Reserve a table</a>
-            <a class="btn line-light" href="#menu" data-i18n="viewMenu">View menu</a>
+            <a class="btn line-light" href="https://heyzine.com/flip-book/7badf703f1.html" target="_blank" rel="noreferrer" data-i18n="viewMenu">View full menu</a>
           </div>
           <div class="hero-pills">
-            <div class="info-pill"><small data-i18n="pillRating">Rating</small><p data-i18n="pillRatingText">4.8 guest signal</p></div>
+            <div class="info-pill"><small data-i18n="pillRating">Rating</small><p data-i18n="pillRatingText">4.8 on Google</p></div>
             <div class="info-pill"><small data-i18n="pillGoodFor">Good for</small><p data-i18n="pillGoodForText">Family, friends, couples</p></div>
             <div class="info-pill"><small data-i18n="pillMood">Mood</small><p data-i18n="pillMoodText">Comfortable, warm, stylish</p></div>
           </div>
         </div>
         <div style="position:relative; padding-bottom: 42px;">
           <figure class="photo-card hero-photo">
-            <img src="https://xbeefth.com/wp-content/uploads/elementor/thumbs/X11-e1722393262635-r9k4gzl1r7buju2m4r7fz9wevh74fpajcmrq318xec.jpg" alt="X BEEF comfort food plated dish" loading="eager" onerror="handleImageError(this)">
+            <img src="https://xbeefth.com/wp-content/uploads/elementor/thumbs/X11-e1722393262635-r9k4gzl1r7buju2m4r7fz9wevh74fpajcmrq318xec.jpg" alt="X BEEF comfort food plated dish" loading="eager" fetchpriority="high" decoding="async" onerror="handleImageError(this)">
             <span class="fallback-mark" aria-hidden="true">X</span>
             <span class="photo-shade"></span>
             <figcaption class="photo-caption">
@@ -677,7 +171,7 @@
       <div class="container story-grid">
         <div class="image-stack">
           <figure class="photo-card">
-            <img src="https://xbeefth.com/wp-content/uploads/elementor/thumbs/steakhouse-img-2-r9k4h0irojnlui66pbyl0d4n6mwhsv2e6olj4rdnro.jpg" alt="X BEEF generous dish for family meals" loading="lazy" onerror="handleImageError(this)">
+            <img src="https://xbeefth.com/wp-content/uploads/elementor/thumbs/steakhouse-img-2-r9k4h0irojnlui66pbyl0d4n6mwhsv2e6olj4rdnro.jpg" alt="X BEEF generous dish for family meals" loading="lazy" decoding="async" onerror="handleImageError(this)">
             <span class="fallback-mark" aria-hidden="true">X</span>
             <span class="photo-shade"></span>
             <figcaption class="photo-caption">
@@ -686,7 +180,7 @@
             </figcaption>
           </figure>
           <figure class="photo-card light">
-            <img src="https://xbeefth.com/wp-content/uploads/elementor/thumbs/X02-r9k4h0irojnlui66pbyl0d4n6mwhsv2e6olj4rdnro.jpg" alt="X BEEF plated food close up" loading="lazy" onerror="handleImageError(this)">
+            <img src="https://xbeefth.com/wp-content/uploads/elementor/thumbs/X02-r9k4h0irojnlui66pbyl0d4n6mwhsv2e6olj4rdnro.jpg" alt="X BEEF plated food close up" loading="lazy" decoding="async" onerror="handleImageError(this)">
             <span class="fallback-mark" aria-hidden="true">X</span>
             <span class="photo-shade"></span>
             <figcaption class="photo-caption">
@@ -698,8 +192,60 @@
         <div>
           <p class="eyebrow" data-i18n="storyEyebrow">Brand story</p>
           <h2 class="section-title" data-i18n="storyTitle">Good food, kind service, and space to slow down.</h2>
-          <p class="section-copy" data-i18n="storyCopy">The website should make X BEEF feel like a polished neighbourhood restaurant: stylish enough for a special meal, relaxed enough for everyday comfort. The message is simple: welcome people well and serve food everyone at the table can enjoy.</p>
-          <div class="value-grid" id="valueGrid"></div>
+          <p class="section-copy" data-i18n="storyCopy">X BEEF is a polished neighbourhood restaurant in Ayutthaya: stylish enough for a special meal, relaxed enough for everyday comfort. Our promise is simple — welcome people well and serve food everyone at the table can enjoy.</p>
+          <div class="value-grid" id="valueGrid">
+            <article class="value-card">
+              <h3>Comfort</h3>
+              <p>Familiar food with a refined finish: steaks, burgers, pasta, BBQ pork ribs, lamb chop, Thai-Western dishes, sides, coffee, and dessert.</p>
+            </article>
+            <article class="value-card">
+              <h3>Steak craft</h3>
+              <p>Dry-aged beef, imported selections, and different cuts bring a premium steakhouse layer to the relaxed dining experience.</p>
+            </article>
+            <article class="value-card">
+              <h3>Service</h3>
+              <p>Welcoming, helpful, and clear from first click to final table booking.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section signature-section" id="signatures">
+      <div class="container">
+        <div class="signature-head">
+          <div>
+            <p class="eyebrow light" data-i18n="signatureEyebrow">Signatures</p>
+            <h2 class="section-title" data-i18n="signatureTitle">Dry-aged in-house, served without fuss.</h2>
+          </div>
+          <p class="section-copy" data-i18n="signatureCopy">Steak is our craft. We dry-age selected cuts in our own cabinet, grill over real fire, and plate everything to share — premium beef without the stiff steakhouse formality.</p>
+        </div>
+        <div class="signature-grid" id="signatureGrid">
+          <article class="signature-card">
+            <small>Dry-aged</small>
+            <h3>Dry-aged ribeye</h3>
+            <p>Aged in-house for deeper, nuttier flavour and a tender bite — the dish to order first.</p>
+          </article>
+          <article class="signature-card">
+            <small>Thai fire</small>
+            <h3>Grilled beef with jaew</h3>
+            <p>Steakhouse craft meets Thai flavour: smoky grilled beef with our punchy jaew dipping sauce.</p>
+          </article>
+          <article class="signature-card">
+            <small>Slow-cooked</small>
+            <h3>BBQ pork ribs</h3>
+            <p>Cooked low and slow until tender, glazed in smoky-sweet barbecue sauce. Made for sharing.</p>
+          </article>
+          <article class="signature-card">
+            <small>House favourite</small>
+            <h3>X BEEF burger</h3>
+            <p>A generous house burger built on quality beef — the easy choice the whole table agrees on.</p>
+          </article>
+        </div>
+        <div class="dryaged-note">
+          <span class="xmark" aria-hidden="true">X</span>
+          <p data-i18n="dryagedNote">Dry-aging lets time do the work: moisture slowly leaves the beef, concentrating its flavour into something deeper and nuttier while the texture turns tender. Ask our team which cut is at its peak today.</p>
+          <a class="btn line-light" href="https://heyzine.com/flip-book/7badf703f1.html" target="_blank" rel="noreferrer" data-i18n="viewMenu">View full menu</a>
         </div>
       </div>
     </section>
@@ -711,15 +257,30 @@
             <p class="eyebrow" data-i18n="menuEyebrow">Menu</p>
             <h2 class="section-title" data-i18n="menuTitleMain">Familiar dishes, served with care.</h2>
           </div>
-          <p class="section-copy" data-i18n="menuIntro">The menu should feel easy to understand: premium steak and dry-aged beef for steak lovers, Western comfort favourites like burgers, pasta, BBQ pork ribs and lamb chop, Thai-Western dishes for sharing, and cafe/drinks for guests who want to stay longer.</p>
+          <p class="section-copy" data-i18n="menuIntro">Premium steak and dry-aged beef for steak lovers, Western comfort favourites like burgers, pasta, BBQ pork ribs and lamb chop, Thai-Western dishes for sharing, and coffee, dessert, and drinks for guests who want to stay a little longer.</p>
         </div>
         <div class="menu-layout">
-          <div class="menu-tabs" id="menuTabs" role="tablist" aria-label="Menu categories"></div>
+          <div class="menu-tabs" id="menuTabs" aria-label="Menu categories">
+            <button class="menu-tab is-active" type="button" data-menu="steak" aria-pressed="true"><span>Steak &amp; Dry-Aged Beef</span></button>
+            <button class="menu-tab" type="button" data-menu="western" aria-pressed="false"><span>Western Comfort</span></button>
+            <button class="menu-tab" type="button" data-menu="fusion" aria-pressed="false"><span>Thai-Western Fusion</span></button>
+            <button class="menu-tab" type="button" data-menu="sharing" aria-pressed="false"><span>Pasta &amp; Sharing</span></button>
+            <button class="menu-tab" type="button" data-menu="drinks" aria-pressed="false"><span>Cafe &amp; Drinks</span></button>
+          </div>
           <article class="menu-card" aria-live="polite">
-            <p class="eyebrow" id="menuTitle"></p>
-            <h3 id="menuNote"></h3>
-            <div class="menu-list" id="menuList"></div>
-            <p class="menu-note" data-i18n="menuNoteFooter">Keep prices out of the premium landing page, but connect the full menu through PDF, delivery, LINE, or a booking platform.</p>
+            <p class="eyebrow" id="menuTitle">Steak &amp; Dry-Aged Beef</p>
+            <h3 id="menuNote">Dry-aged beef, premium steaks, lamb, and selected cuts from Thailand and around the world.</h3>
+            <div class="menu-list" id="menuList">
+              <div class="menu-item"><span>Dry-aged ribeye</span></div>
+              <div class="menu-item"><span>Australian beef steak</span></div>
+              <div class="menu-item"><span>Black pepper beef steak</span></div>
+              <div class="menu-item"><span>Imported striploin</span></div>
+              <div class="menu-item"><span>Lamb chop</span></div>
+            </div>
+            <div class="actions">
+              <a class="btn dark" href="https://heyzine.com/flip-book/7badf703f1.html" target="_blank" rel="noreferrer" data-i18n="viewFullMenu">View full menu &amp; prices</a>
+            </div>
+            <p class="menu-note" data-i18n="menuNoteFooter">A taste of what we serve — browse the full menu with prices in our digital menu book, or ask us on LINE @xbeefth.</p>
           </article>
         </div>
       </div>
@@ -731,251 +292,112 @@
           <div>
             <p class="eyebrow light" data-i18n="experienceEyebrow">Experience</p>
             <h2 class="section-title" data-i18n="experienceTitle">Relaxed comfort, with a premium steakhouse soul.</h2>
-            <p class="section-copy" style="color:rgba(255,255,255,0.76);" data-i18n="experienceCopy">X BEEF should feel welcoming first: a family-friendly restaurant with warm service, soft lighting, outdoor garden corners, photo-friendly moments, Western comfort dishes, Thai-Western flavours, dry-aged beef, and steaks from around the world.</p>
+            <p class="section-copy" data-i18n="experienceCopy">X BEEF is welcoming first: a family-friendly restaurant with warm service, soft lighting, outdoor garden corners, photo-friendly moments, Western comfort dishes, Thai-Western flavours, dry-aged beef, and steaks from around the world.</p>
           </div>
-          <div class="experience-list" id="experienceList"></div>
+          <div class="experience-list" id="experienceList">
+            <article class="experience-item">
+              <div class="experience-number">01</div>
+              <div><h3>Relaxed family atmosphere</h3><p>A warm, comfortable room for family meals, couples, tourists, and friends who want good food without formality.</p></div>
+            </article>
+            <article class="experience-item">
+              <div class="experience-number">02</div>
+              <div><h3>Dry-aged beef and world steaks</h3><p>Dry-aged beef, imported selections, and different steak cuts — premium quality with an approachable spirit.</p></div>
+            </article>
+            <article class="experience-item">
+              <div class="experience-number">03</div>
+              <div><h3>Thai-Western comfort</h3><p>Steakhouse favourites, Thai flavours, burgers, pasta, BBQ pork ribs, lamb chop, coffee, desserts, and drinks — something for everyone at the table.</p></div>
+            </article>
+            <article class="experience-item">
+              <div class="experience-number">04</div>
+              <div><h3>Outdoor garden and photo corners</h3><p>A relaxed outdoor garden mood and small photo moments that make an evening memorable for families, couples, and tourists.</p></div>
+            </article>
+            <article class="experience-item">
+              <div class="experience-number">05</div>
+              <div><h3>Live music evenings</h3><p>Evening drinks, soft lighting, and live music nights that turn a casual dinner into a longer, more social visit.</p></div>
+            </article>
+          </div>
         </div>
-        <div class="testimonial-grid" id="testimonialGrid"></div>
+        <div class="review-cta">
+          <div>
+            <div class="stars" aria-label="4.8 out of 5 stars">★★★★★</div>
+            <p class="review-cta-copy" data-i18n="reviewCtaCopy">Rated 4.8 on Google by our guests. Read what families, friends, and travellers say about their evenings at X BEEF.</p>
+          </div>
+          <a class="btn line-light" href="https://www.google.com/maps/search/?api=1&amp;query=X%20BEEF%20Ayutthaya" target="_blank" rel="noreferrer" data-i18n="readReviews">Read reviews on Google</a>
+        </div>
       </div>
     </section>
 
     <section class="section" id="visit">
-      <div class="container visit-grid">
-        <div>
-          <p class="eyebrow" data-i18n="visitEyebrow">Visit</p>
-          <h2 class="section-title" data-i18n="visitTitle">Easy comfort in Ayutthaya.</h2>
-          <p class="section-copy" data-i18n="visitCopy">Designed for lunch, dinner, family meals, tourists, date nights, casual celebrations, garden photos, and relaxed live music evenings. On mobile, booking, map, call, and LINE should be one tap away.</p>
-          <div class="actions">
-            <a class="btn dark" href="tel:+66811541145" data-i18n="callNow">Call now</a>
-            <a class="btn line" href="https://www.google.com/maps/search/?api=1&query=X%20BEEF%20Ayutthaya" target="_blank" rel="noreferrer" data-i18n="openMap">Open map</a>
+      <div class="container">
+        <div class="visit-grid">
+          <div>
+            <p class="eyebrow" data-i18n="visitEyebrow">Visit</p>
+            <h2 class="section-title" data-i18n="visitTitle">Easy comfort in Ayutthaya.</h2>
+            <p class="section-copy" data-i18n="visitCopy">Perfect for lunch, dinner, family meals, date nights, casual celebrations, garden photos, and relaxed live-music evenings. Call us, message us on LINE, or open the map — we're easy to find.</p>
+            <div class="actions">
+              <a class="btn dark" href="tel:+66811541145" data-i18n="callNow">Call now</a>
+              <a class="btn line" href="https://line.me/R/ti/p/@xbeefth" target="_blank" rel="noreferrer" data-i18n="lineChat">Chat on LINE</a>
+              <a class="btn line" href="https://www.google.com/maps/search/?api=1&amp;query=X%20BEEF%20Ayutthaya" target="_blank" rel="noreferrer" data-i18n="openMap">Open map</a>
+            </div>
           </div>
+          <aside class="info-card">
+            <div class="rating-row">
+              <div><div class="rating-label" style="color:var(--warm);" data-i18n="guestRating">Guest rating</div><div class="rating-number">4.8</div></div>
+              <span class="xmark dark">X</span>
+            </div>
+            <ul class="info-list" id="visitList">
+              <li><strong>Address</strong><span>22/27 Phai Ling, Phra Nakhon Si Ayutthaya District, Ayutthaya 13000</span></li>
+              <li><strong>Hours</strong><span>Daily 11:00–22:00</span></li>
+              <li><strong>Reserve</strong><span>Call <a href="tel:+66811541145">081 154 1145</a> or message <a href="https://line.me/R/ti/p/@xbeefth" target="_blank" rel="noreferrer">LINE @xbeefth</a></span></li>
+              <li><strong>Menu</strong><span><a href="https://heyzine.com/flip-book/7badf703f1.html" target="_blank" rel="noreferrer">Browse the full menu &amp; prices</a></span></li>
+              <li><strong>Good for</strong><span>Family meals, date nights, friends, tourists, garden seating, photo spots, live-music evenings</span></li>
+            </ul>
+          </aside>
         </div>
-        <aside class="info-card">
-          <div class="rating-row">
-            <div><div class="rating-label" style="color:var(--warm);" data-i18n="guestRating">Guest rating</div><div class="rating-number">4.8</div></div>
-            <span class="xmark dark">X</span>
-          </div>
-          <ul class="info-list" id="visitList"></ul>
-        </aside>
+        <div class="map-wrap">
+          <iframe src="https://www.google.com/maps?q=X%20BEEF%20Ayutthaya&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map to X BEEF Ayutthaya" allowfullscreen></iframe>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container footer-inner">
-      <div class="footer-brand"><span class="xmark dark">X</span><span data-i18n="footerCopy">© X BEEF Steak & Comfort Dining Ayutthaya</span></div>
+      <div>
+        <div class="footer-brand"><span class="xmark dark">X</span><span data-i18n="footerCopy">© X BEEF Steak &amp; Comfort Dining, Ayutthaya</span></div>
+        <p class="footer-contact">
+          <span data-i18n="footerAddress">22/27 Phai Ling, Phra Nakhon Si Ayutthaya, Ayutthaya 13000</span><br>
+          <a href="tel:+66811541145">081 154 1145</a> · <a href="https://line.me/R/ti/p/@xbeefth" target="_blank" rel="noreferrer">LINE @xbeefth</a>
+        </p>
+      </div>
       <div class="footer-links">
         <a href="#visit" data-i18n="reserve">Reserve</a>
-        <a href="#menu" data-i18n="navMenu">Menu</a>
+        <a href="https://heyzine.com/flip-book/7badf703f1.html" target="_blank" rel="noreferrer" data-i18n="navMenu">Menu</a>
         <a href="https://www.facebook.com/xbeefth" target="_blank" rel="noreferrer">Facebook</a>
         <a href="https://www.instagram.com/xbeefth/" target="_blank" rel="noreferrer">Instagram</a>
-        <span>LINE @xbeefth</span>
       </div>
     </div>
   </footer>
 
-  <script>
-    const content = {
-      brandSubtitle: "Steak - Thai-Western comfort - Ayutthaya",
-      navStory: "Story",
-      navMenu: "Menu",
-      navExperience: "Experience",
-      navVisit: "Visit",
-      reserve: "Reserve",
-      callNow: "Call now",
-      visitInfo: "Visit info",
-      heroEyebrow: "Dry-aged beef - Thai-Western comfort - family dining",
-      heroTitle: "A warm table in Ayutthaya.",
-      heroCopy: "X BEEF is a relaxed comfort-dining restaurant for families, couples, friends, and travellers. Come for generous comfort food, dry-aged beef, steaks from around the world, Western favourites like burgers, pasta, BBQ pork ribs and lamb chop, Thai-Western flavours, coffee, dessert, and an easy atmosphere that feels good at any time of day.",
-      reserveTable: "Reserve a table",
-      viewMenu: "View menu",
-      pillRating: "Rating",
-      pillRatingText: "4.8 guest signal",
-      pillGoodFor: "Good for",
-      pillGoodForText: "Family, friends, couples",
-      pillMood: "Mood",
-      pillMoodText: "Comfortable, warm, stylish",
-      heroPhotoTitle: "Comfort food, warm service, relaxed evenings.",
-      googleRating: "Google rating",
-      ratingCopy: "A comfortable Ayutthaya restaurant for dry-aged beef, global steaks, burgers, pasta, BBQ pork ribs, lamb chop, Thai-Western dishes, drinks, family meals, and relaxed special occasions.",
-      storyPhotoOne: "A room for family meals",
-      storyPhotoOneCaption: "Generous plates and a calm table for lunch or dinner.",
-      storyPhotoTwo: "Cafe comfort, dinner mood",
-      storyPhotoTwoCaption: "Coffee, dessert, drinks, and easy evening atmosphere.",
-      storyEyebrow: "Brand story",
-      storyTitle: "Good food, kind service, and space to slow down.",
-      storyCopy: "The website should make X BEEF feel like a polished neighbourhood restaurant: stylish enough for a special meal, relaxed enough for everyday comfort. The message is simple: welcome people well and serve food everyone at the table can enjoy.",
-      menuEyebrow: "Menu",
-      menuTitleMain: "Familiar dishes, served with care.",
-      menuIntro: "The menu should feel easy to understand: premium steak and dry-aged beef for steak lovers, Western comfort favourites like burgers, pasta, BBQ pork ribs and lamb chop, Thai-Western dishes for sharing, and cafe/drinks for guests who want to stay longer.",
-      menuNoteFooter: "Keep prices out of the premium landing page, but connect the full menu through PDF, delivery, LINE, or a booking platform.",
-      experienceEyebrow: "Experience",
-      experienceTitle: "Relaxed comfort, with a premium steakhouse soul.",
-      experienceCopy: "X BEEF should feel welcoming first: a family-friendly restaurant with warm service, soft lighting, outdoor garden corners, photo-friendly moments, Western comfort dishes, Thai-Western flavours, dry-aged beef, and steaks from around the world.",
-      visitEyebrow: "Visit",
-      visitTitle: "Easy comfort in Ayutthaya.",
-      visitCopy: "Designed for lunch, dinner, family meals, tourists, date nights, casual celebrations, garden photos, and relaxed live music evenings. On mobile, booking, map, call, and LINE should be one tap away.",
-      openMap: "Open map",
-      guestRating: "Guest rating",
-      footerCopy: "© X BEEF Steak & Comfort Dining Ayutthaya",
-      values: [
-        ["Comfort", "Familiar food with a refined finish: steaks, burgers, pasta, BBQ pork ribs, lamb chop, Thai-Western dishes, sides, coffee, and dessert."],
-        ["Steak craft", "Dry-aged beef, imported selections, and different cuts bring a premium steakhouse layer to the relaxed dining experience."],
-        ["Service", "Welcoming, helpful, and clear from first click to final table booking."]
-      ],
-      menus: [
-        { id: "steak", title: "Steak & Dry-Aged Beef", note: "Dry-aged beef, premium steaks, lamb, and selected cuts from Thailand and around the world.", items: ["Dry-aged ribeye", "Australian beef steak", "Black pepper beef steak", "Imported striploin", "Lamb chop"] },
-        { id: "western", title: "Western Comfort", note: "Classic Western favourites for families, friends, and easy sharing at the table.", items: ["X BEEF burger", "BBQ pork ribs", "Seafood alfredo pasta", "Tomahawk pork chop", "Garlic bread"] },
-        { id: "fusion", title: "Thai-Western Fusion", note: "Comfort dishes that bring steakhouse classics together with familiar Thai flavours.", items: ["Grilled beef with jaew", "Thai-style spicy steak salad", "Seabass steak", "Garlic butter rice", "Spicy Thai-Western pasta"] },
-        { id: "sharing", title: "Pasta & Sharing", note: "Creamy, warm, familiar dishes for the center of the table.", items: ["Seafood alfredo spaghetti", "Truffle soup", "Spinach baked cheese", "Potato salad", "Sharing sides"] },
-        { id: "drinks", title: "Cafe & Drinks", note: "Coffee, dessert, wine, mocktails, and easy after-meal drinks.", items: ["House coffee", "Seasonal desserts", "Signature mocktails", "Wine selection", "Craft beer & bar snacks"] }
-      ],
-      experiences: [
-        ["01", "Relaxed family atmosphere", "A warm, comfortable room for family meals, couples, tourists, and friends who want good food without formality."],
-        ["02", "Dry-aged beef and world steaks", "The menu can highlight dry-aged beef, imported selections, and different steak cuts while keeping the tone approachable."],
-        ["03", "Thai-Western comfort", "Steakhouse favourites, Thai flavours, burgers, pasta, BBQ pork ribs, lamb chop, coffee, desserts, and drinks make the restaurant easy for everyone at the table."],
-        ["04", "Outdoor garden and photo corners", "A relaxed outdoor garden mood and small photo moments make the restaurant feel memorable for families, couples, and tourists."],
-        ["05", "Live music evenings", "Evening drinks, soft lighting, and live music nights can turn a casual dinner into a longer, more social visit."]
-      ],
-      testimonials: [
-        { quote: "A comfortable place for the whole family. The food is easy to share and the service feels warm.", by: "M. K. - Thailand" },
-        { quote: "Relaxed atmosphere, good drinks, and a nice place to spend time after exploring Ayutthaya.", by: "A. S. - Singapore" },
-        { quote: "The menu has something for everyone, from steak, burgers, pasta, BBQ pork ribs, and lamb chop to sides, coffee, and dessert.", by: "L. M. - France" }
-      ],
-      visit: [
-        ["Address", "22/27 Phai Ling, Phra Nakhon Si Ayutthaya District, Ayutthaya 13000"],
-        ["Hours", "Daily 11:00-22:00"],
-        ["Reserve", "Call 081 154 1145 or contact LINE @xbeefth"],
-        ["Good for", "Family meals, date nights, friends, tourists, steaks, burgers, pasta, ribs, lamb, dessert, coffee, drinks, garden seating, photo spots, live music evenings"]
-      ]
-    };
+  <nav class="action-bar" aria-label="Quick actions">
+    <a href="tel:+66811541145">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span data-i18n="actionCall">Call</span>
+    </a>
+    <a href="https://line.me/R/ti/p/@xbeefth" target="_blank" rel="noreferrer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+      <span data-i18n="actionLine">LINE</span>
+    </a>
+    <a href="https://www.google.com/maps/search/?api=1&amp;query=X%20BEEF%20Ayutthaya" target="_blank" rel="noreferrer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <span data-i18n="actionMap">Map</span>
+    </a>
+    <a href="https://heyzine.com/flip-book/7badf703f1.html" target="_blank" rel="noreferrer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      <span data-i18n="actionMenu">Menu</span>
+    </a>
+  </nav>
 
-    let currentTheme = localStorage.getItem("xbeef-theme") || "light";
-    let activeMenuId = "steak";
-
-    function handleImageError(image) {
-      const card = image.closest(".photo-card");
-      if (card) card.classList.add("image-failed");
-      image.remove();
-    }
-
-    function applyTheme(theme) {
-      currentTheme = theme;
-      document.documentElement.setAttribute("data-theme", theme);
-      localStorage.setItem("xbeef-theme", theme);
-      document.querySelectorAll("[data-theme-toggle]").forEach(button => {
-        const icon = button.querySelector("[data-theme-icon]");
-        if (icon) icon.textContent = theme === "dark" ? "sun" : "moon";
-        button.setAttribute("aria-label", theme === "dark" ? "Switch to light mode" : "Switch to dark mode");
-        button.setAttribute("title", theme === "dark" ? "Switch to light mode" : "Switch to dark mode");
-      });
-    }
-
-    function renderPage() {
-      const data = content;
-      document.querySelectorAll("[data-i18n]").forEach(node => {
-        const key = node.getAttribute("data-i18n");
-        if (data[key]) node.textContent = data[key];
-      });
-      renderValues(data);
-      renderMenuTabs(data);
-      renderMenu(activeMenuId);
-      renderExperience(data);
-      renderTestimonials(data);
-      renderVisit(data);
-      applyTheme(currentTheme);
-    }
-
-    function renderValues(data) {
-      document.getElementById("valueGrid").innerHTML = data.values.map(([title, text]) => `
-        <article class="value-card">
-          <h3>${title}</h3>
-          <p>${text}</p>
-        </article>
-      `).join("");
-    }
-
-    function renderMenuTabs(data) {
-      const tabs = document.getElementById("menuTabs");
-      tabs.innerHTML = data.menus.map(menu => `
-        <button class="menu-tab ${menu.id === activeMenuId ? "is-active" : ""}" type="button" data-menu="${menu.id}" role="tab" aria-selected="${menu.id === activeMenuId}">
-          ${menu.title} <span>></span>
-        </button>
-      `).join("");
-      tabs.querySelectorAll(".menu-tab").forEach(tab => {
-        tab.addEventListener("click", () => {
-          activeMenuId = tab.dataset.menu;
-          renderMenuTabs(content);
-          renderMenu(activeMenuId);
-        });
-      });
-    }
-
-    function renderMenu(key) {
-      const menu = content.menus.find(item => item.id === key) || content.menus[0];
-      document.getElementById("menuTitle").textContent = menu.title;
-      document.getElementById("menuNote").textContent = menu.note;
-      document.getElementById("menuList").innerHTML = menu.items.map(item => `<div class="menu-item"><span>${item}</span><span>*</span></div>`).join("");
-    }
-
-    function renderExperience(data) {
-      document.getElementById("experienceList").innerHTML = data.experiences.map(([number, title, text]) => `
-        <article class="experience-item">
-          <div class="experience-number">${number}</div>
-          <div>
-            <h3>${title}</h3>
-            <p>${text}</p>
-          </div>
-        </article>
-      `).join("");
-    }
-
-    function renderTestimonials(data) {
-      document.getElementById("testimonialGrid").innerHTML = data.testimonials.map(item => `
-        <article class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <blockquote>"${item.quote}"</blockquote>
-          <cite>${item.by}</cite>
-        </article>
-      `).join("");
-    }
-
-    function renderVisit(data) {
-      document.getElementById("visitList").innerHTML = data.visit.map(([label, value]) => `
-        <li><strong>${label}</strong><span>${value}</span></li>
-      `).join("");
-    }
-
-    const mobilePanel = document.getElementById("mobilePanel");
-    const menuToggle = document.querySelector(".menu-toggle");
-    const closeBtn = document.querySelector(".close-btn");
-
-    function openMenu() {
-      mobilePanel.classList.add("is-open");
-      mobilePanel.setAttribute("aria-hidden", "false");
-      document.body.style.overflow = "hidden";
-    }
-
-    function closeMenu() {
-      mobilePanel.classList.remove("is-open");
-      mobilePanel.setAttribute("aria-hidden", "true");
-      document.body.style.overflow = "";
-    }
-
-    menuToggle.addEventListener("click", openMenu);
-    closeBtn.addEventListener("click", closeMenu);
-    mobilePanel.addEventListener("click", event => {
-      if (event.target.tagName === "A") closeMenu();
-    });
-    document.addEventListener("keydown", event => {
-      if (event.key === "Escape") closeMenu();
-    });
-    document.querySelectorAll("[data-theme-toggle]").forEach(button => {
-      button.addEventListener("click", () => applyTheme(currentTheme === "dark" ? "light" : "dark"));
-    });
-
-    applyTheme(currentTheme);
-    renderPage();
-  </script>
+  <script src="main.js" defer></script>
 </body>
 </html>
