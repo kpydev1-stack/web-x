@@ -4,20 +4,27 @@ on:
   push:
     branches: [main]
 
-env:
-  VERCEL_ORG_ID: team_BmM07g8YY0iso8vRNtBE1V6O
-  VERCEL_PROJECT_ID: prj_VuZLaz74XHNtC93Nx4ABHb9XCA0A
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install Vercel CLI
-        run: npm install -g vercel
-
-      - name: Deploy to Vercel
-        run: vercel deploy --prod --yes --token "$VERCEL_TOKEN" --scope "$VERCEL_ORG_ID"
+      - name: Check secret is set
+        run: |
+          if [ -z "${{ secrets.VERCEL_TOKEN }}" ]; then
+            echo "ERROR: VERCEL_TOKEN secret is empty or not set"
+            exit 1
+          else
+            echo "VERCEL_TOKEN is set (length: ${#VERCEL_TOKEN})"
+          fi
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+
+      - name: Deploy to Vercel
+        uses: amondnet/vercel-action@v25
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: team_BmM07g8YY0iso8vRNtBE1V6O
+          vercel-project-id: prj_VuZLaz74XHNtC93Nx4ABHb9XCA0A
+          vercel-args: '--prod'
